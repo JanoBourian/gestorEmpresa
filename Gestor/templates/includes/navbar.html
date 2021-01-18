@@ -1,0 +1,47 @@
+{% load static %}
+<nav class="navbar is-success" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="{% url 'entradas:inicio' %}">
+            <img src="{% static 'img/logo_03.png' %}">
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item">
+                Empleados
+            </a>
+
+            <a class="navbar-item">
+                Departamentos
+            </a>
+
+            <a class="navbar-item">
+                FAQ
+            </a>
+
+            <a class="navbar-item">
+                Admin
+            </a>
+        </div>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons">
+                    <a class="button is-danger">
+                        Empleado +
+                    </a>
+                    <a class="button is-danger">
+                        Departamento +
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

@@ -20,5 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     #re_path('departamentos/', include('apps.departamentos.urls')),
     #re_path('empleados/', include('apps.empleados.urls')),
-    #re_path('', include('apps.entradas.urls')),
+    re_path('', include('apps.entradas.urls')),
 ]
