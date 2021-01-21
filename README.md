@@ -56,6 +56,14 @@ Aunque por defecto podríamos utilizar SDQLite, para fines de integración y man
 
 - contraseña: password
 
+### Administrador:
+
+- usuario: usuario
+
+- correo: usuario@mail.com
+
+- contraseña: password
+
 ## Mantenimiento y soporte :link:
 
 Desarrollo mantenido y soportado por: [@Janobourian][twitter]

@@ -1,0 +1,24 @@
+{% extends 'includes/base.html' %}
+{% load static %}
+
+{% block titulo %}
+Departamentos
+{% endblock titulo %}
+
+
+{% block contenido %}
+
+{% if departamentos %}
+<div class="notification is-success is-light">
+    Tienes: <strong> {{ departamentos.count}} </strong> departamento{{departamentos.count|pluralize}}
+</div>
+{% else %}
+<div class="notification is-danger is-light">
+    <button class="delete"></button>
+    No hay Departamentos aún.
+    <strong><a href="#"> Agrega un Departamento</a></strong>
+</div>
+
+{% endif %}
+
+{% endblock contenido %}
